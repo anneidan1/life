@@ -1,0 +1,2491 @@
+ 
+      .sc-prism-input-text-h {
+        --icon-offset-x: 0.75rem;
+        --icon-offset-y: 0%;
+        --input-margin-top: 1rem;
+        --input-margin-bottom: 1rem;
+        --text-align: left;
+        --input-padding-minimal: var(--space-asym-1, 0.75rem 0 0.5rem 0);
+        --input-padding-contained: var(--space-sym-1, 1rem);
+        position: relative;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        margin-top: var(--input-margin-top);
+        margin-bottom: var(--input-margin-bottom)
+      }
+
+      .screen-reader-text.sc-prism-input-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0
+      }
+
+      .label-text.sc-prism-input-text {
+        margin-bottom: 0.25rem;
+        display: inline-block;
+        cursor: pointer;
+        text-align: left;
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-base) / var(--tw-text-opacity))
+      }
+
+      .hint-container.sc-prism-input-text {
+        margin-top: 0.25rem;
+        display: flex;
+        align-items: center
+      }
+
+      .hint-container.sc-prism-input-text>.sc-prism-input-text:not([hidden])~.sc-prism-input-text:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+        margin-left: calc(0.25rem * (1 - var(--tw-space-x-reverse)));
+        margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))
+      }
+
+      .hint-text.sc-prism-input-text {
+        display: block;
+        text-align: left
+      }
+
+      @media (prefers-reduced-motion) {
+        .input.sc-prism-input-text {
+          transition: none
+        }
+      }
+
+      .input.sc-prism-input-text {
+        font-family: var(--text-body1-family);
+        font-size: var(--text-body1-size);
+        font-weight: var(--text-body1-weight);
+        letter-spacing: var(--text-body1-letter-spacing);
+        line-height: var(--text-body1-leading);
+        text-transform: var(--text-body1-text-transform);
+        --text-body1-leading: var(--text-body1-line-height);
+        --text-body1-family: var(--text-family-default);
+        box-sizing: border-box;
+        width: 100%;
+        background-color: transparent;
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-base) / var(--tw-text-opacity));
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        border-bottom-width: 1px;
+        border-top-width: 0px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-style: solid;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-neutral2-base) / var(--tw-border-opacity));
+        text-align: left;
+        text-align: var(--text-align, left);
+        transition: border-color, box-shadow, border-radius, padding 0.2s ease-in-out
+      }
+
+      .input.body1.sc-prism-input-text {
+        font-family: var(--text-body1-family);
+        font-size: var(--text-body1-size);
+        font-weight: var(--text-body1-weight);
+        letter-spacing: var(--text-body1-letter-spacing);
+        line-height: var(--text-body1-leading);
+        text-transform: var(--text-body1-text-transform);
+        --text-body1-leading: var(--text-body1-line-height);
+        --text-body1-family: var(--text-family-default)
+      }
+
+      .input.heading1.sc-prism-input-text {
+        font-family: var(--text-headline1-family);
+        font-size: var(--text-headline1-size);
+        font-weight: var(--text-headline1-weight);
+        letter-spacing: var(--text-headline1-letter-spacing);
+        line-height: var(--text-headline1-leading);
+        text-transform: var(--text-headline1-text-transform);
+        --text-headline1-leading: var(--text-headline1-line-height);
+        --text-headline1-family: var(--text-family-brand)
+      }
+
+      .input.sc-prism-input-text::-ms-reveal {
+        display: none
+      }
+
+      .input.minimal.sc-prism-input-text {
+        padding: var(--input-padding-minimal)
+      }
+
+      .input.contained.sc-prism-input-text {
+        border-radius: 4px;
+        border-radius: var(--border-radius-small, 4px);
+        border-width: 1px;
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-neutral2-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--material-neutral2-base-shadow);
+        padding: var(--input-padding-contained)
+      }
+
+      .input.sc-prism-input-text::-webkit-input-placeholder {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral2-base) / var(--tw-text-opacity))
+      }
+
+      .input.sc-prism-input-text::-moz-placeholder {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral2-base) / var(--tw-text-opacity))
+      }
+
+      .input.sc-prism-input-text::placeholder {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral2-base) / var(--tw-text-opacity))
+      }
+
+      .input.contained.sc-prism-input-text:focus {
+        border-color: transparent;
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 rgba(0, 0, 0, 0);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 #0000;
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 rgba(0, 0, 0, 0));
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(var(--ring-color-theme1-base) / var(--tw-ring-opacity))
+      }
+
+      .input.minimal.sc-prism-input-text:focus {
+        border-bottom-width: 2px;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-theme1-base) / var(--tw-border-opacity))
+      }
+
+      .input.minimal.valid.sc-prism-input-text,
+      .input.contained.valid.sc-prism-input-text,
+      .input.minimal.valid.sc-prism-input-text:focus {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-positive-base) / var(--tw-border-opacity))
+      }
+
+      .input.contained.valid.sc-prism-input-text:focus {
+        border-color: transparent;
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 rgba(0, 0, 0, 0);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 #0000;
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 rgba(0, 0, 0, 0));
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(var(--ring-color-positive-base) / var(--tw-ring-opacity))
+      }
+
+      .input.minimal.invalid.sc-prism-input-text,
+      .input.contained.invalid.sc-prism-input-text,
+      .input.minimal.invalid.sc-prism-input-text:focus {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-negative-base) / var(--tw-border-opacity))
+      }
+
+      .input.contained.invalid.sc-prism-input-text:focus {
+        border-color: transparent;
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 rgba(0, 0, 0, 0);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 #0000;
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 rgba(0, 0, 0, 0));
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(var(--ring-color-negative-base) / var(--tw-ring-opacity))
+      }
+
+      .input.icon-leading.sc-prism-input-text {
+        padding-left: 3rem
+      }
+
+      .input.minimal.icon-leading.sc-prism-input-text {
+        padding-left: 2rem
+      }
+
+      .input.icon-trailing.sc-prism-input-text {
+        padding-right: 3.5rem
+      }
+
+      .input.minimal.icon-trailing.sc-prism-input-text {
+        padding-right: 2rem
+      }
+
+      .input.disabled.sc-prism-input-text::-webkit-input-placeholder {
+        cursor: not-allowed;
+        --tw-border-opacity: var(--border-opacity-inactive, 0.3);
+        --tw-text-opacity: var(--text-opacity-inactive, 0.3)
+      }
+
+      .input.disabled.sc-prism-input-text::-moz-placeholder {
+        cursor: not-allowed;
+        --tw-border-opacity: var(--border-opacity-inactive, 0.3);
+        --tw-text-opacity: var(--text-opacity-inactive, 0.3)
+      }
+
+      .input.disabled.sc-prism-input-text::placeholder,
+      .input.disabled.sc-prism-input-text,
+      .input.minimal.disabled.sc-prism-input-text,
+      .input.contained.disabled.sc-prism-input-text {
+        cursor: not-allowed;
+        --tw-border-opacity: var(--border-opacity-inactive, 0.3);
+        --tw-text-opacity: var(--text-opacity-inactive, 0.3)
+      }
+
+      .invalid-text.sc-prism-input-text {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-base) / var(--tw-text-opacity))
+      }
+
+      .valid-text.sc-prism-input-text {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-base) / var(--tw-text-opacity))
+      }
+
+      .wrap.sc-prism-input-text {
+        position: relative;
+        display: block
+      }
+
+      .icon-trailing-manual.sc-prism-input-text,
+      .icon-search.sc-prism-input-text,
+      .sc-prism-input-text-s>[slot^='icon-'] {
+        position: absolute;
+        z-index: 10;
+        --button-padding-xs: 0.375rem;
+        --icon-color: inherit;
+        top: calc(50% - var(--icon-offset-y));
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%)
+      }
+
+      .icon-search.sc-prism-input-text {
+        pointer-events: none
+      }
+
+      .contained.sc-prism-input-text-h .icon-search.sc-prism-input-text,
+      .sc-prism-input-text-h.contained .sc-prism-input-text-s>[slot='icon-leading'] {
+        left: 1rem
+      }
+
+      .minimal.sc-prism-input-text-h .icon-search.sc-prism-input-text,
+      .sc-prism-input-text-h.minimal .sc-prism-input-text-s>[slot='icon-leading'] {
+        left: 0px
+      }
+
+      .contained.sc-prism-input-text-h .icon-trailing-manual.sc-prism-input-text,
+      .sc-prism-input-text-h.contained .sc-prism-input-text-s>[slot='icon-trailing'] {
+        right: 1rem
+      }
+
+      .minimal.sc-prism-input-text-h .icon-trailing-manual.sc-prism-input-text,
+      .sc-prism-input-text-h.minimal .sc-prism-input-text-s>[slot='icon-trailing'] {
+        right: 0px
+      }
+
+      .sc-prism-input-text-s>button[slot^='icon-'] {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-style: none;
+        background: transparent
+      }
+
+      .sc-prism-input-text-s>button[slot^='icon-']:focus {
+        outline-color: #141417
+      }
+
+      .invalid.month.contained.sc-prism-input-text,
+      .valid.month.contained.sc-prism-input-text,
+      .invalid.datetime-local.contained.sc-prism-input-text,
+      .valid.datetime-local.contained.sc-prism-input-text,
+      .invalid.date.contained.sc-prism-input-text,
+      .valid.date.contained.sc-prism-input-text {
+        padding-right: 3.5rem
+      }
+
+      .invalid.month.sc-prism-input-text,
+      .valid.month.sc-prism-input-text,
+      .invalid.datetime-local.sc-prism-input-text,
+      .valid.datetime-local.sc-prism-input-text,
+      .invalid.date.sc-prism-input-text,
+      .valid.date.sc-prism-input-text {
+        padding-right: 1.5rem
+      }
+
+      .number.sc-prism-input-text::-webkit-outer-spin-button,
+      .number.sc-prism-input-text::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        -moz-appearance: textfield
+      }
+    
+    
+      .sc-prism-checkbox-h {
+        --checkbox-margin-top: 1rem;
+        --checkbox-margin-bottom: 1rem;
+        position: relative;
+        display: block;
+        width: auto;
+        margin-top: var(--checkbox-margin-top);
+        margin-bottom: var(--checkbox-margin-bottom)
+      }
+
+      .screen-reader-text.sc-prism-checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0
+      }
+
+      .label.sc-prism-checkbox {
+        display: grid;
+        grid-column-gap: 1rem;
+        -webkit-column-gap: 1rem;
+        -moz-column-gap: 1rem;
+        column-gap: 1rem;
+        grid-template-columns: -webkit-max-content 1fr;
+        grid-template-columns: max-content 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'checkbox label'
+          'checkbox hint'
+      }
+
+      .label.right.sc-prism-checkbox {
+        grid-template-areas: 'label checkbox'
+          'hint checkbox'
+      }
+
+      .label.sc-prism-checkbox:not(.loading):hover {
+        cursor: pointer
+      }
+
+      .label.sc-prism-checkbox:hover .checkbox.checked.sc-prism-checkbox,
+      .input.sc-prism-checkbox:hover+.label.sc-prism-checkbox .checkbox.checked.sc-prism-checkbox,
+      .label.sc-prism-checkbox:hover .checkbox.indeterminate.sc-prism-checkbox,
+      .input.sc-prism-checkbox:hover+.label.sc-prism-checkbox .checkbox.indeterminate.sc-prism-checkbox {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-theme1-hover) / var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-hover-shadow)
+      }
+
+      .input[disabled].sc-prism-checkbox:hover,
+      .label.disabled.sc-prism-checkbox:hover {
+        cursor: not-allowed
+      }
+
+      .label-text.sc-prism-checkbox {
+        display: inline-block;
+        vertical-align: middle;
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-base) / var(--tw-text-opacity));
+        grid-area: label
+      }
+
+      .input.sc-prism-checkbox:hover+.label.sc-prism-checkbox:not(.loading) .checkbox.sc-prism-checkbox:not(.checked):not(.invalid) {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-neutral2-hover) / var(--tw-border-opacity))
+      }
+
+      .checkbox.sc-prism-checkbox {
+        pointer-events: none;
+        display: inline-block;
+        height: 1.5rem;
+        width: 1.5rem;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border-radius: var(--border-radius-small, 4px);
+        border-width: 1px;
+        border-style: solid;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-neutral2-base) / var(--tw-border-opacity));
+        background-color: transparent;
+        text-align: center;
+        vertical-align: middle;
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-neutral-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--material-neutral-base-shadow);
+        transition: all 200ms ease-in;
+        transition-property: background-color, border-color, box-shadow;
+        grid-area: checkbox
+      }
+
+      .loading.sc-prism-checkbox .checkbox.sc-prism-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        --tw-border-opacity: var(--border-opacity-inactive, 0.3);
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral2-base) / var(--tw-text-opacity))
+      }
+
+      .input.sc-prism-checkbox {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+        visibility: visible;
+        opacity: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: solid;
+        top: 2px;
+        left: 2px
+      }
+
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox:not(.loading) .checkbox.sc-prism-checkbox {
+        outline-style: solid;
+        outline-width: 1px;
+        outline-offset: 2px;
+        outline-color: #35353B;
+        outline-color: var(--outline-color-neutral2-focus, #35353B)
+      }
+
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox:not(.loading) .checkbox.sc-prism-checkbox {
+        outline-style: solid;
+        outline-width: 1px;
+        outline-offset: 2px;
+        outline-color: #35353B;
+        outline-color: var(--outline-color-neutral2-focus, #35353B)
+      }
+
+      .sc-prism-checkbox-h:focus-within .label.sc-prism-checkbox:not(.loading) .checkbox.sc-prism-checkbox {
+        outline-style: solid;
+        outline-width: 1px;
+        outline-offset: 2px;
+        outline-color: #35353B;
+        outline-color: var(--outline-color-neutral2-focus, #35353B)
+      }
+
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox:not(.loading) .checkbox.sc-prism-checkbox:not(.invalid) {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-neutral2-focus) / var(--tw-border-opacity))
+      }
+
+      .sc-prism-checkbox-h:focus-within .label.sc-prism-checkbox:not(.loading) .checkbox.sc-prism-checkbox:not(.invalid) {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-neutral2-focus) / var(--tw-border-opacity))
+      }
+
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox:not(.loading) .checked.sc-prism-checkbox,
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox:not(.loading) .indeterminate.sc-prism-checkbox {
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5);
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-theme1-focus) / var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-focus) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-focus-shadow)
+      }
+
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox:not(.loading) .checked.sc-prism-checkbox,
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox:not(.loading) .indeterminate.sc-prism-checkbox {
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5);
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-theme1-focus) / var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-focus) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-focus-shadow)
+      }
+
+      .sc-prism-checkbox-h:focus-within .label.sc-prism-checkbox:not(.loading) .checked.sc-prism-checkbox,
+      .sc-prism-checkbox-h:focus-within .label.sc-prism-checkbox:not(.loading) .indeterminate.sc-prism-checkbox {
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5);
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-theme1-focus) / var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-focus) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-focus-shadow)
+      }
+
+      .checked.sc-prism-checkbox,
+      .indeterminate.sc-prism-checkbox {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-width: 0px;
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-base) / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --shadow-color: var(--fill-theme1-base-shadow)
+      }
+
+      .loading.sc-prism-checkbox .checked.sc-prism-checkbox {
+        --tw-bg-opacity: var(--background-opacity-inactive, 0.3);
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-base) / var(--tw-text-opacity))
+      }
+
+      .invalid.sc-prism-checkbox {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-negative-base) / var(--tw-border-opacity))
+      }
+
+      .invalid.checked.sc-prism-checkbox,
+      .invalid.indeterminate.sc-prism-checkbox {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-negative-base) / var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-base-shadow)
+      }
+
+      .input.sc-prism-checkbox:hover+.label.sc-prism-checkbox .invalid.sc-prism-checkbox {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-negative-hover) / var(--tw-border-opacity))
+      }
+
+      .input.sc-prism-checkbox:hover+.label.sc-prism-checkbox .invalid.checked.sc-prism-checkbox,
+      .input.sc-prism-checkbox:hover+.label.sc-prism-checkbox .invalid.indeterminate.sc-prism-checkbox {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-hover-shadow)
+      }
+
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox .invalid.sc-prism-checkbox {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-negative-focus) / var(--tw-border-opacity))
+      }
+
+      .sc-prism-checkbox-h:focus-within .label.sc-prism-checkbox .invalid.sc-prism-checkbox {
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-negative-focus) / var(--tw-border-opacity))
+      }
+
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox .invalid.checked.sc-prism-checkbox,
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox .invalid.indeterminate.sc-prism-checkbox {
+        outline-color: #8F002F;
+        outline-color: var(--outline-color-negative-focus, #8F002F);
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-focus) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-focus-shadow)
+      }
+
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox .invalid.checked.sc-prism-checkbox,
+      [focus-within].sc-prism-checkbox-h .label.sc-prism-checkbox .invalid.indeterminate.sc-prism-checkbox {
+        outline-color: #8F002F;
+        outline-color: var(--outline-color-negative-focus, #8F002F);
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-focus) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-focus-shadow)
+      }
+
+      .sc-prism-checkbox-h:focus-within .label.sc-prism-checkbox .invalid.checked.sc-prism-checkbox,
+      .sc-prism-checkbox-h:focus-within .label.sc-prism-checkbox .invalid.indeterminate.sc-prism-checkbox {
+        outline-color: #8F002F;
+        outline-color: var(--outline-color-negative-focus, #8F002F);
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-focus) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-focus-shadow)
+      }
+
+      .disabled.sc-prism-checkbox {
+        cursor: not-allowed;
+        opacity: 0.3;
+        opacity: var(--opacity-inactive, 0.3)
+      }
+
+      .icon.sc-prism-checkbox {
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity))
+      }
+
+      .hint-container.sc-prism-checkbox {
+        margin-top: 0.25rem;
+        display: flex;
+        align-items: center
+      }
+
+      .hint-container.sc-prism-checkbox>.sc-prism-checkbox:not([hidden])~.sc-prism-checkbox:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+        margin-left: calc(0.25rem * (1 - var(--tw-space-x-reverse)));
+        margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))
+      }
+
+      .hint-text.sc-prism-checkbox {
+        display: block;
+        text-align: left;
+        grid-area: hint
+      }
+
+      .invalid-text.sc-prism-checkbox {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-base) / var(--tw-text-opacity))
+      }
+
+      .loading.sc-prism-checkbox {
+        pointer-events: none;
+        cursor: wait
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .checkbox.sc-prism-checkbox {
+          transition: none
+        }
+      }
+    
+    
+    
+      
+      .sc-prism-button-h {
+        --width: auto;
+        --justify: center;
+        box-sizing: border-box;
+        display: inline-block;
+        display: var(--display, inline-block)
+      }
+
+      [type='button'].sc-prism-button-h,
+      [type='reset'].sc-prism-button-h,
+      [type='submit'].sc-prism-button-h {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none
+      }
+
+      .btn.sc-prism-button {
+        position: relative;
+        cursor: pointer;
+        align-items: center;
+        justify-items: center;
+        border-width: 2px;
+        border-style: solid;
+        border-color: transparent;
+        background-color: transparent;
+        background-image: none;
+        text-decoration-line: none;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        padding: 0;
+        padding: var(--button-padding, 0);
+        justify-content: var(--justify);
+        transition: all 200ms ease-in;
+        transition-property: outline background-color border-color;
+        width: var(--width)
+      }
+
+      .btn.focus-visible.sc-prism-button {
+        outline-width: 2px;
+        outline-offset: 2px;
+        outline-color: transparent;
+        outline-color: var(--outline-color-transparent, transparent)
+      }
+
+      .btn.focus-visible.sc-prism-button {
+        outline-width: 2px;
+        outline-offset: 2px;
+        outline-color: transparent;
+        outline-color: var(--outline-color-transparent, transparent)
+      }
+
+      .btn.sc-prism-button:focus-visible {
+        outline-width: 2px;
+        outline-offset: 2px;
+        outline-color: transparent;
+        outline-color: var(--outline-color-transparent, transparent)
+      }
+
+      .dir-row.sc-prism-button {
+        flex-direction: row
+      }
+
+      .dir-row-reverse.sc-prism-button {
+        flex-direction: row-reverse
+      }
+
+      .dir-col.sc-prism-button {
+        flex-direction: column
+      }
+
+      .dir-col-reverse.sc-prism-button {
+        flex-direction: column-reverse
+      }
+
+      .vertical.sc-prism-button {
+        display: flex;
+        display: var(--display, flex);
+        flex-direction: column
+      }
+
+      .horizontal.sc-prism-button {
+        display: flex;
+        display: var(--display, flex)
+      }
+
+      .sc-prism-button-s>[slot^='icon'] {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        --icon-color: inherit;
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms
+      }
+
+      .text.sc-prism-button {
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 200ms
+      }
+
+      .xs.sc-prism-button,
+      .sm.sc-prism-button,
+      .md.sc-prism-button {
+        border-radius: 4px;
+        border-radius: var(--border-radius-small, 4px)
+      }
+
+      .xs.sc-prism-button {
+        padding: 0.625rem 1rem;
+        padding: var(--button-padding-xs, 0.625rem 1rem)
+      }
+
+      .xs.compact.sc-prism-button,
+      .xs.ghost-icon.sc-prism-button {
+        padding: 0.625rem;
+        padding: var(--button-padding-xs, 0.625rem)
+      }
+
+      .sm.sc-prism-button {
+        padding: 0.75rem 1.5rem;
+        padding: var(--button-padding-sm, 0.75rem 1.5rem)
+      }
+
+      .sm.compact.sc-prism-button,
+      .sm.vertical.sc-prism-button,
+      .sm.ghost-icon.sc-prism-button {
+        padding: 0.75rem;
+        padding: var(--button-padding-sm, 0.75rem)
+      }
+
+      .md.sc-prism-button {
+        padding: 1rem 2rem;
+        padding: var(--button-padding, 1rem 2rem)
+      }
+
+      .md.vertical.sc-prism-button,
+      .md.compact.sc-prism-button,
+      .md.ghost-icon.sc-prism-button {
+        padding: 1rem;
+        padding: var(--button-padding, 1rem)
+      }
+
+      .fill.neutral.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-neutral-base-shadow)
+      }
+
+      .fill.neutral.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-neutral-hover-shadow)
+      }
+
+      .fill.neutral.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-neutral-down-shadow)
+      }
+
+      .fill.neutral.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-focus) / var(--tw-bg-opacity));
+        outline-color: #141417;
+        --shadow-color: var(--fill-neutral-focus-shadow)
+      }
+
+      .fill.neutral.sc-prism-button:not(.disabled):focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-focus) / var(--tw-bg-opacity));
+        outline-color: #141417;
+        --shadow-color: var(--fill-neutral-focus-shadow)
+      }
+
+      .fill.neutral-inverse.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-inverse-base-shadow)
+      }
+
+      .fill.neutral-inverse.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-inverse-hover-shadow)
+      }
+
+      .fill.neutral-inverse.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-inverse-down-shadow)
+      }
+
+      .fill.neutral-inverse.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-focus) / var(--tw-bg-opacity));
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9);
+        --shadow-color: var(--fill-inverse-focus-shadow)
+      }
+
+      .fill.neutral-inverse.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-focus) / var(--tw-bg-opacity));
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9);
+        --shadow-color: var(--fill-inverse-focus-shadow)
+      }
+
+      .fill.neutral-inverse.sc-prism-button:not(.disabled):focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-focus) / var(--tw-bg-opacity));
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9);
+        --shadow-color: var(--fill-inverse-focus-shadow)
+      }
+
+      .fill.theme1.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-base-shadow)
+      }
+
+      .fill.theme1.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-hover-shadow)
+      }
+
+      .fill.theme1.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-down-shadow)
+      }
+
+      .fill.theme1.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-focus) / var(--tw-bg-opacity));
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5);
+        --shadow-color: var(--fill-theme1-focus-shadow)
+      }
+
+      .fill.theme1.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-focus) / var(--tw-bg-opacity));
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5);
+        --shadow-color: var(--fill-theme1-focus-shadow)
+      }
+
+      .fill.theme1.sc-prism-button:not(.disabled):focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-focus) / var(--tw-bg-opacity));
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5);
+        --shadow-color: var(--fill-theme1-focus-shadow)
+      }
+
+      .fill.theme2.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-base-shadow)
+      }
+
+      .fill.theme2.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-hover-shadow)
+      }
+
+      .fill.theme2.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-down-shadow)
+      }
+
+      .fill.theme2.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .fill.theme2.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .fill.theme2.sc-prism-button:not(.disabled):focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .fill.info.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-info-base-shadow)
+      }
+
+      .fill.info.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-info-hover-shadow)
+      }
+
+      .fill.info.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-info-down-shadow)
+      }
+
+      .fill.info.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-focus) / var(--tw-bg-opacity));
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0);
+        --shadow-color: var(--fill-info-focus-shadow)
+      }
+
+      .fill.info.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-focus) / var(--tw-bg-opacity));
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0);
+        --shadow-color: var(--fill-info-focus-shadow)
+      }
+
+      .fill.info.sc-prism-button:not(.disabled):focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-focus) / var(--tw-bg-opacity));
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0);
+        --shadow-color: var(--fill-info-focus-shadow)
+      }
+
+      .fill.caution.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-base-shadow)
+      }
+
+      .fill.caution.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-hover-shadow)
+      }
+
+      .fill.caution.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-down-shadow)
+      }
+
+      .fill.caution.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .fill.caution.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .fill.caution.sc-prism-button:not(.disabled):focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .fill.positive.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-positive-base-shadow)
+      }
+
+      .fill.positive.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-positive-hover-shadow)
+      }
+
+      .fill.positive.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-positive-down-shadow)
+      }
+
+      .fill.positive.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-focus) / var(--tw-bg-opacity));
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851);
+        --shadow-color: var(--fill-positive-focus-shadow)
+      }
+
+      .fill.positive.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-focus) / var(--tw-bg-opacity));
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851);
+        --shadow-color: var(--fill-positive-focus-shadow)
+      }
+
+      .fill.positive.sc-prism-button:not(.disabled):focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-focus) / var(--tw-bg-opacity));
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851);
+        --shadow-color: var(--fill-positive-focus-shadow)
+      }
+
+      .fill.negative.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-base-shadow)
+      }
+
+      .fill.negative.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-hover-shadow)
+      }
+
+      .fill.negative.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-down-shadow)
+      }
+
+      .fill.negative.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-focus) / var(--tw-bg-opacity));
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C);
+        --shadow-color: var(--fill-negative-focus-shadow)
+      }
+
+      .fill.negative.sc-prism-button:not(.disabled).focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-focus) / var(--tw-bg-opacity));
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C);
+        --shadow-color: var(--fill-negative-focus-shadow)
+      }
+
+      .fill.negative.sc-prism-button:not(.disabled):focus-visible {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-focus) / var(--tw-bg-opacity));
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C);
+        --shadow-color: var(--fill-negative-focus-shadow)
+      }
+
+      .outline.neutral.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-base) / var(--tw-text-opacity));
+        background-color: transparent;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-neutral-base) / var(--tw-border-opacity));
+        --tw-border-opacity: var(--border-opacity-tertiary, 0.15)
+      }
+
+      .outline.neutral.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-neutral-hover-shadow)
+      }
+
+      .outline.neutral.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-neutral-down-shadow)
+      }
+
+      .outline.neutral.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-focus) / var(--tw-bg-opacity));
+        outline-color: #141417;
+        --shadow-color: var(--fill-neutral-focus-shadow)
+      }
+
+      .outline.neutral.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-focus) / var(--tw-bg-opacity));
+        outline-color: #141417;
+        --shadow-color: var(--fill-neutral-focus-shadow)
+      }
+
+      .outline.neutral-inverse.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        background-color: transparent;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-inverse-base) / var(--tw-border-opacity));
+        --tw-border-opacity: var(--border-opacity-tertiary, 0.15)
+      }
+
+      .outline.neutral-inverse.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-inverse-hover-shadow)
+      }
+
+      .outline.neutral-inverse.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-inverse-down-shadow)
+      }
+
+      .outline.neutral-inverse.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-focus) / var(--tw-bg-opacity));
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9);
+        --shadow-color: var(--fill-inverse-focus-shadow)
+      }
+
+      .outline.neutral-inverse.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-focus) / var(--tw-bg-opacity));
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9);
+        --shadow-color: var(--fill-inverse-focus-shadow)
+      }
+
+      .outline.neutral-inverse.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-focus) / var(--tw-bg-opacity));
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9);
+        --shadow-color: var(--fill-inverse-focus-shadow)
+      }
+
+      .outline.theme1.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-base) / var(--tw-text-opacity));
+        background-color: transparent;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-theme1-base) / var(--tw-border-opacity));
+        --tw-border-opacity: var(--border-opacity-tertiary, 0.15)
+      }
+
+      .outline.theme1.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-hover-shadow)
+      }
+
+      .outline.theme1.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-down) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-down-shadow)
+      }
+
+      .outline.theme1.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-focus) / var(--tw-bg-opacity));
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5);
+        --shadow-color: var(--fill-theme1-focus-shadow)
+      }
+
+      .outline.theme1.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-focus) / var(--tw-bg-opacity));
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5);
+        --shadow-color: var(--fill-theme1-focus-shadow)
+      }
+
+      .outline.theme1.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-focus) / var(--tw-bg-opacity));
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5);
+        --shadow-color: var(--fill-theme1-focus-shadow)
+      }
+
+      .outline.theme2.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-base) / var(--tw-text-opacity));
+        background-color: transparent;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-caution-base) / var(--tw-border-opacity));
+        --tw-border-opacity: var(--border-opacity-tertiary, 0.15)
+      }
+
+      .outline.theme2.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-down) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-hover-shadow)
+      }
+
+      .outline.theme2.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-down) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-down-shadow)
+      }
+
+      .outline.theme2.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .outline.theme2.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .outline.theme2.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .outline.info.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-base) / var(--tw-text-opacity));
+        background-color: transparent;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-info-base) / var(--tw-border-opacity));
+        --tw-border-opacity: var(--border-opacity-tertiary, 0.15)
+      }
+
+      .outline.info.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-info-hover-shadow)
+      }
+
+      .outline.info.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-down) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-info-down-shadow)
+      }
+
+      .outline.info.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-focus) / var(--tw-bg-opacity));
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0);
+        --shadow-color: var(--fill-info-focus-shadow)
+      }
+
+      .outline.info.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-focus) / var(--tw-bg-opacity));
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0);
+        --shadow-color: var(--fill-info-focus-shadow)
+      }
+
+      .outline.info.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-focus) / var(--tw-bg-opacity));
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0);
+        --shadow-color: var(--fill-info-focus-shadow)
+      }
+
+      .outline.positive.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-base) / var(--tw-text-opacity));
+        background-color: transparent;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-positive-base) / var(--tw-border-opacity));
+        --tw-border-opacity: var(--border-opacity-tertiary, 0.15)
+      }
+
+      .outline.positive.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-positive-hover-shadow)
+      }
+
+      .outline.positive.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-down) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-positive-down-shadow)
+      }
+
+      .outline.positive.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-focus) / var(--tw-bg-opacity));
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851);
+        --shadow-color: var(--fill-positive-focus-shadow)
+      }
+
+      .outline.positive.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-focus) / var(--tw-bg-opacity));
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851);
+        --shadow-color: var(--fill-positive-focus-shadow)
+      }
+
+      .outline.positive.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-focus) / var(--tw-bg-opacity));
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851);
+        --shadow-color: var(--fill-positive-focus-shadow)
+      }
+
+      .outline.caution.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-base) / var(--tw-text-opacity));
+        background-color: transparent;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-caution-base) / var(--tw-border-opacity));
+        --tw-border-opacity: var(--border-opacity-tertiary, 0.15)
+      }
+
+      .outline.caution.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-hover-shadow)
+      }
+
+      .outline.caution.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-down-shadow)
+      }
+
+      .outline.caution.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .outline.caution.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .outline.caution.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-focus) / var(--tw-bg-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00);
+        --shadow-color: var(--fill-caution-focus-shadow)
+      }
+
+      .outline.negative.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-base) / var(--tw-text-opacity));
+        background-color: transparent;
+        --tw-border-opacity: 1;
+        border-color: rgb(var(--border-color-stroke-negative-base) / var(--tw-border-opacity));
+        --tw-border-opacity: var(--border-opacity-tertiary, 0.15)
+      }
+
+      .outline.negative.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-hover-shadow)
+      }
+
+      .outline.negative.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-hover) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-down-shadow)
+      }
+
+      .outline.negative.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-focus) / var(--tw-bg-opacity));
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C);
+        --shadow-color: var(--fill-negative-focus-shadow)
+      }
+
+      .outline.negative.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-focus) / var(--tw-bg-opacity));
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C);
+        --shadow-color: var(--fill-negative-focus-shadow)
+      }
+
+      .outline.negative.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-focus) / var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-focus) / var(--tw-bg-opacity));
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C);
+        --shadow-color: var(--fill-negative-focus-shadow)
+      }
+
+      .ghost.sc-prism-button {
+        border-radius: 2px;
+        border-radius: var(--border-radius-xsmall, 2px)
+      }
+
+      .ghost.sc-prism-button:hover::after,
+      .ghost.active.sc-prism-button::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        height: 0.125rem;
+        width: 100%
+      }
+
+      .ghost.neutral.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-base) / var(--tw-text-opacity))
+      }
+
+      .ghost.neutral.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-hover) / var(--tw-text-opacity))
+      }
+
+      .ghost.neutral.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-down) / var(--tw-text-opacity))
+      }
+
+      .ghost.neutral.sc-prism-button:not(.disabled):hover::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-neutral-hover-shadow)
+      }
+
+      .ghost.neutral.active.sc-prism-button::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-neutral-base-shadow)
+      }
+
+      .ghost.neutral.sc-prism-button:not(.disabled):active::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-neutral-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-neutral-down-shadow)
+      }
+
+      .ghost.neutral.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #141417
+      }
+
+      .ghost.neutral.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #141417
+      }
+
+      .ghost.neutral-inverse.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity))
+      }
+
+      .ghost.neutral-inverse.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-hover) / var(--tw-text-opacity))
+      }
+
+      .ghost.neutral-inverse.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-down) / var(--tw-text-opacity))
+      }
+
+      .ghost.neutral-inverse.sc-prism-button:not(.disabled):hover::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-inverse-hover-shadow)
+      }
+
+      .ghost.neutral-inverse.active.sc-prism-button::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-inverse-base-shadow)
+      }
+
+      .ghost.inverse.sc-prism-button:not(.disabled):active::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-inverse-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-inverse-down-shadow)
+      }
+
+      .ghost.neutral-inverse.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9)
+      }
+
+      .ghost.neutral-inverse.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9)
+      }
+
+      .ghost.neutral-inverse.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9)
+      }
+
+      .ghost.positive.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-base) / var(--tw-text-opacity))
+      }
+
+      .ghost.positive.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-hover) / var(--tw-text-opacity))
+      }
+
+      .ghost.positive.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-down) / var(--tw-text-opacity))
+      }
+
+      .ghost.positive.sc-prism-button:not(.disabled):hover::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-positive-hover-shadow)
+      }
+
+      .ghost.positive.active.sc-prism-button::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-positive-base-shadow)
+      }
+
+      .ghost.positive.sc-prism-button:not(.disabled):active::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-positive-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-positive-down-shadow)
+      }
+
+      .ghost.positive.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-focus) / var(--tw-text-opacity));
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851)
+      }
+
+      .ghost.positive.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-focus) / var(--tw-text-opacity));
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851)
+      }
+
+      .ghost.positive.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-focus) / var(--tw-text-opacity));
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851)
+      }
+
+      .ghost.negative.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-base) / var(--tw-text-opacity))
+      }
+
+      .ghost.negative.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-hover) / var(--tw-text-opacity))
+      }
+
+      .ghost.negative.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-down) / var(--tw-text-opacity))
+      }
+
+      .ghost.negative.sc-prism-button:not(.disabled):hover::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-hover-shadow)
+      }
+
+      .ghost.negative.active.sc-prism-button::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-base-shadow)
+      }
+
+      .ghost.negative.sc-prism-button:not(.disabled):active::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-negative-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-negative-down-shadow)
+      }
+
+      .ghost.negative.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-focus) / var(--tw-text-opacity));
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C)
+      }
+
+      .ghost.negative.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-focus) / var(--tw-text-opacity));
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C)
+      }
+
+      .ghost.negative.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-focus) / var(--tw-text-opacity));
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C)
+      }
+
+      .ghost.caution.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-base) / var(--tw-text-opacity))
+      }
+
+      .ghost.caution.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-hover) / var(--tw-text-opacity))
+      }
+
+      .ghost.caution.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-down) / var(--tw-text-opacity))
+      }
+
+      .ghost.caution.sc-prism-button:not(.disabled):hover::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-hover-shadow)
+      }
+
+      .ghost.caution.active.sc-prism-button::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-base-shadow)
+      }
+
+      .ghost.caution.sc-prism-button:not(.disabled):active::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-caution-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-caution-down-shadow)
+      }
+
+      .ghost.caution.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-focus) / var(--tw-text-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .ghost.caution.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-focus) / var(--tw-text-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .ghost.caution.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-focus) / var(--tw-text-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .ghost.info.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-base) / var(--tw-text-opacity))
+      }
+
+      .ghost.info.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-hover) / var(--tw-text-opacity))
+      }
+
+      .ghost.info.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-down) / var(--tw-text-opacity))
+      }
+
+      .ghost.info.sc-prism-button:not(.disabled):hover::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-info-hover-shadow)
+      }
+
+      .ghost.info.active.sc-prism-button::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-info-base-shadow)
+      }
+
+      .ghost.info.sc-prism-button:not(.disabled):active::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-info-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-info-down-shadow)
+      }
+
+      .ghost.info.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-focus) / var(--tw-text-opacity));
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0)
+      }
+
+      .ghost.info.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-focus) / var(--tw-text-opacity));
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0)
+      }
+
+      .ghost.info.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-focus) / var(--tw-text-opacity));
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0)
+      }
+
+      .ghost.theme1.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-base) / var(--tw-text-opacity))
+      }
+
+      .ghost.theme1.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-hover) / var(--tw-text-opacity))
+      }
+
+      .ghost.theme1.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-down) / var(--tw-text-opacity))
+      }
+
+      .ghost.theme1.sc-prism-button:not(.disabled):hover::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-hover-shadow)
+      }
+
+      .ghost.theme1.active.sc-prism-button::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-base) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-base-shadow)
+      }
+
+      .ghost.theme1.sc-prism-button:not(.disabled):active::after {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-fill-theme1-down) / var(--tw-bg-opacity));
+        --shadow-color: var(--fill-theme1-down-shadow)
+      }
+
+      .ghost.theme1.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-focus) / var(--tw-text-opacity));
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5)
+      }
+
+      .ghost.theme1.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-focus) / var(--tw-text-opacity));
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5)
+      }
+
+      .ghost.theme1.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-focus) / var(--tw-text-opacity));
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5)
+      }
+
+      .ghost.theme2.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-base) / var(--tw-text-opacity))
+      }
+
+      .ghost.theme2.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-hover) / var(--tw-text-opacity))
+      }
+
+      .ghost.theme2.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-down) / var(--tw-text-opacity))
+      }
+
+      .ghost.theme2.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-focus) / var(--tw-text-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .ghost.theme2.sc-prism-button:not(.disabled).focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-focus) / var(--tw-text-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .ghost.theme2.sc-prism-button:not(.disabled):focus-visible {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-focus) / var(--tw-text-opacity));
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .link.sc-prism-button {
+        border-radius: 2px;
+        border-radius: var(--border-radius-xsmall, 2px);
+        border-width: 0px;
+        text-decoration-line: underline
+      }
+
+      .link.neutral.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-base) / var(--tw-text-opacity))
+      }
+
+      .link.neutral.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-hover) / var(--tw-text-opacity))
+      }
+
+      .link.neutral.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-down) / var(--tw-text-opacity))
+      }
+
+      .link.neutral.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #141417
+      }
+
+      .link.neutral.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #141417
+      }
+
+      .link.neutral-inverse.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity))
+      }
+
+      .link.neutral-inverse.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-hover) / var(--tw-text-opacity))
+      }
+
+      .link.neutral-inverse.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-down) / var(--tw-text-opacity))
+      }
+
+      .link.neutral-inverse.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9)
+      }
+
+      .link.neutral-inverse.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9)
+      }
+
+      .link.neutral-inverse.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #F6F6F9;
+        outline-color: var(--outline-color-inverse-base, #F6F6F9)
+      }
+
+      .link.theme1.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-base) / var(--tw-text-opacity))
+      }
+
+      .link.theme1.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-hover) / var(--tw-text-opacity))
+      }
+
+      .link.theme1.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-down) / var(--tw-text-opacity))
+      }
+
+      .link.theme1.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5)
+      }
+
+      .link.theme1.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5)
+      }
+
+      .link.theme1.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #6138F5;
+        outline-color: var(--outline-color-theme1-base, #6138F5)
+      }
+
+      .link.theme2.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-base) / var(--tw-text-opacity))
+      }
+
+      .link.theme2.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-hover) / var(--tw-text-opacity))
+      }
+
+      .link.theme2.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-down) / var(--tw-text-opacity))
+      }
+
+      .link.theme2.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .link.theme2.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .link.theme2.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .link.info.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-base) / var(--tw-text-opacity))
+      }
+
+      .link.info.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-hover) / var(--tw-text-opacity))
+      }
+
+      .link.info.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-down) / var(--tw-text-opacity))
+      }
+
+      .link.info.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0)
+      }
+
+      .link.info.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0)
+      }
+
+      .link.info.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #0051D0;
+        outline-color: var(--outline-color-info-base, #0051D0)
+      }
+
+      .link.positive.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-base) / var(--tw-text-opacity))
+      }
+
+      .link.positive.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-hover) / var(--tw-text-opacity))
+      }
+
+      .link.positive.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-down) / var(--tw-text-opacity))
+      }
+
+      .link.positive.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851)
+      }
+
+      .link.positive.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851)
+      }
+
+      .link.positive.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #006851;
+        outline-color: var(--outline-color-positive-base, #006851)
+      }
+
+      .link.caution.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-base) / var(--tw-text-opacity))
+      }
+
+      .link.caution.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-hover) / var(--tw-text-opacity))
+      }
+
+      .link.caution.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-down) / var(--tw-text-opacity))
+      }
+
+      .link.caution.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .link.caution.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .link.caution.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #B33D00;
+        outline-color: var(--outline-color-caution-base, #B33D00)
+      }
+
+      .link.negative.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-base) / var(--tw-text-opacity))
+      }
+
+      .link.negative.sc-prism-button:not(.disabled):hover {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-hover) / var(--tw-text-opacity))
+      }
+
+      .link.negative.sc-prism-button:not(.disabled):active {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-down) / var(--tw-text-opacity))
+      }
+
+      .link.negative.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C)
+      }
+
+      .link.negative.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C)
+      }
+
+      .link.negative.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #B7023C;
+        outline-color: var(--outline-color-negative-base, #B7023C)
+      }
+
+      .disabled.sc-prism-button {
+        cursor: not-allowed;
+        opacity: 0.3;
+        opacity: var(--opacity-inactive, 0.3)
+      }
+
+      .ghost-icon.theme1.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-base) / var(--tw-text-opacity))
+      }
+
+      .ghost-icon.theme1.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-theme1-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--material-theme1-hover-shadow)
+      }
+
+      .ghost-icon.theme1.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-theme1-down) / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-theme1-down) / var(--tw-text-opacity));
+        --shadow-color: var(--material-theme1-down-shadow)
+      }
+
+      .ghost-icon.theme1.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #3A0092;
+        outline-color: var(--outline-color-theme1-focus, #3A0092)
+      }
+
+      .ghost-icon.theme1.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #3A0092;
+        outline-color: var(--outline-color-theme1-focus, #3A0092)
+      }
+
+      .ghost-icon.theme1.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #3A0092;
+        outline-color: var(--outline-color-theme1-focus, #3A0092)
+      }
+
+      .ghost-icon.neutral.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-base) / var(--tw-text-opacity))
+      }
+
+      .ghost-icon.neutral.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-neutral-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--material-neutral-hover-shadow)
+      }
+
+      .ghost-icon.neutral.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-neutral-down) / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-neutral-down) / var(--tw-text-opacity));
+        --shadow-color: var(--material-neutral-down-shadow)
+      }
+
+      .ghost-icon.neutral.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #35353B
+      }
+
+      .ghost-icon.neutral.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #35353B
+      }
+
+      .ghost-icon.neutral-inverse.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-base) / var(--tw-text-opacity))
+      }
+
+      .ghost-icon.neutral-inverse.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-neutral-inverse-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--material-neutral-inverse-hover-shadow)
+      }
+
+      .ghost-icon.neutral-inverse.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-neutral-inverse-down) / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-inverse-down) / var(--tw-text-opacity));
+        --shadow-color: var(--material-neutral-inverse-down-shadow)
+      }
+
+      .ghost-icon.neutral-inverse.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #FFFFFF;
+        outline-color: var(--outline-color-inverse-focus, #FFFFFF)
+      }
+
+      .ghost-icon.neutral-inverse.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #FFFFFF;
+        outline-color: var(--outline-color-inverse-focus, #FFFFFF)
+      }
+
+      .ghost-icon.neutral-inverse.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #FFFFFF;
+        outline-color: var(--outline-color-inverse-focus, #FFFFFF)
+      }
+
+      .ghost-icon.info.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-base) / var(--tw-text-opacity))
+      }
+
+      .ghost-icon.info.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-info-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--material-info-hover-shadow)
+      }
+
+      .ghost-icon.info.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-info-down) / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-info-down) / var(--tw-text-opacity));
+        --shadow-color: var(--material-info-down-shadow)
+      }
+
+      .ghost-icon.info.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #0040A3;
+        outline-color: var(--outline-color-info-focus, #0040A3)
+      }
+
+      .ghost-icon.info.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #0040A3;
+        outline-color: var(--outline-color-info-focus, #0040A3)
+      }
+
+      .ghost-icon.info.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #0040A3;
+        outline-color: var(--outline-color-info-focus, #0040A3)
+      }
+
+      .ghost-icon.caution.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-base) / var(--tw-text-opacity))
+      }
+
+      .ghost-icon.caution.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-caution-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--material-caution-hover-shadow)
+      }
+
+      .ghost-icon.caution.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-caution-down) / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-caution-down) / var(--tw-text-opacity));
+        --shadow-color: var(--material-caution-down-shadow)
+      }
+
+      .ghost-icon.caution.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #A33800;
+        outline-color: var(--outline-color-caution-focus, #A33800)
+      }
+
+      .ghost-icon.caution.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #A33800;
+        outline-color: var(--outline-color-caution-focus, #A33800)
+      }
+
+      .ghost-icon.caution.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #A33800;
+        outline-color: var(--outline-color-caution-focus, #A33800)
+      }
+
+      .ghost-icon.positive.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-base) / var(--tw-text-opacity))
+      }
+
+      .ghost-icon.positive.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-positive-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--material-positive-hover-shadow)
+      }
+
+      .ghost-icon.positive.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-positive-down) / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-positive-down) / var(--tw-text-opacity));
+        --shadow-color: var(--material-positive-down-shadow)
+      }
+
+      .ghost-icon.positive.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #005240;
+        outline-color: var(--outline-color-positive-focus, #005240)
+      }
+
+      .ghost-icon.positive.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #005240;
+        outline-color: var(--outline-color-positive-focus, #005240)
+      }
+
+      .ghost-icon.positive.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #005240;
+        outline-color: var(--outline-color-positive-focus, #005240)
+      }
+
+      .ghost-icon.negative.sc-prism-button {
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-base) / var(--tw-text-opacity))
+      }
+
+      .ghost-icon.negative.sc-prism-button:not(.disabled):hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-negative-hover) / var(--tw-bg-opacity));
+        --shadow-color: var(--material-negative-hover-shadow)
+      }
+
+      .ghost-icon.negative.sc-prism-button:not(.disabled):active {
+        --tw-bg-opacity: 1;
+        background-color: rgb(var(--background-color-material-negative-down) / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(var(--text-color-negative-down) / var(--tw-text-opacity));
+        --shadow-color: var(--material-negative-down-shadow)
+      }
+
+      .ghost-icon.negative.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #8F002F;
+        outline-color: var(--outline-color-negative-focus, #8F002F)
+      }
+
+      .ghost-icon.negative.sc-prism-button:not(.disabled).focus-visible {
+        outline-color: #8F002F;
+        outline-color: var(--outline-color-negative-focus, #8F002F)
+      }
+
+      .ghost-icon.negative.sc-prism-button:not(.disabled):focus-visible {
+        outline-color: #8F002F;
+        outline-color: var(--outline-color-negative-focus, #8F002F)
+      }
+
+      .loading-spinner.sc-prism-button {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        display: grid;
+        opacity: 0;
+        opacity: var(--opacity-none, 0);
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 200ms
+      }
+
+      .loading-spinner.spinner.sc-prism-button {
+        align-self: center;
+        justify-self: center;
+        place-self: center
+      }
+
+      .loading.sc-prism-button-s>[slot^='icon'],
+      .loading.sc-prism-button .text.sc-prism-button {
+        opacity: 0.3;
+        opacity: var(--opacity-inactive, 0.3)
+      }
+
+      .loading.sc-prism-button .loading-spinner.sc-prism-button {
+        opacity: 1;
+        opacity: var(--opacity-primary, 1)
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+
+        .btn.sc-prism-button,
+        .btn.sc-prism-button::after,
+        .btn.sc-prism-button:hover,
+        .text.sc-prism-button,
+        .loading-spinner.sc-prism-button,
+        .sc-prism-button-s>[slot^='icon'] {
+          transition: none
+        }
+      }
+    

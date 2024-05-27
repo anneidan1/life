@@ -1,0 +1,30 @@
+.checkbox {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.checkbox input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #6138f5;
+}
+
+.checkbox input:checked ~ .checkbox::after {
+    display: block;
+}

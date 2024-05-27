@@ -1,0 +1,63 @@
+@keyframes atNodeInserted574 {
+        from {
+          opacity: 0.99
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      @-moz-keyframes atNodeInserted574 {
+        from {
+          opacity: 0.99
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      @-webkit-keyframes atNodeInserted574 {
+        from {
+          opacity: 0.99
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      @-ms-keyframes atNodeInserted574 {
+        from {
+          opacity: 0.99
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      @-o-keyframes atNodeInserted574 {
+        from {
+          opacity: 0.99
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      #page-header div.page-header__navigation>nav>a[href="#/"] {
+        animation-duration: 0.001s;
+        animation-name: atNodeInserted574;
+        -moz-animation-duration: 0.001s;
+        -moz-animation-name: atNodeInserted574;
+        -webkit-animation-duration: 0.001s;
+        -webkit-animation-name: atNodeInserted574;
+        -ms-animation-duration: 0.001s;
+        -ms-animation-name: atNodeInserted574;
+        -o-animation-duration: 0.001s;
+        -o-animation-name: atNodeInserted574;
+      }
+   

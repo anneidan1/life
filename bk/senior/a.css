@@ -1,0 +1,17 @@
+/* a.css */
+/* Ensure this rule has higher specificity than the component's internal rules */
+prism-input-text[prism-id="user"].input-error .input {
+    border: 0.4px solid red;
+}
+
+.error-message {
+    display: none;  /* Hidden by default */
+    color: #ffcccc;  /* Very light red */
+    margin-top: 4px;  /* Space for visibility */
+    font-size: 9px;  /* Maintain smaller font size */
+    font-weight: 200;  /* Light font weight */
+}
+
+.input-error {
+    border: 0.4px solid #ffcccc;  /* Matching lighter red border */
+}
